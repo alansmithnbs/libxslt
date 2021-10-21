@@ -511,7 +511,7 @@ xsltMessage(xsltTransformContextPtr ctxt, xmlNodePtr node, xmlNodePtr inst) {
  *
  * Default handler for out of context error messages.
  */
-static void LIBXSLT_ATTR_FORMAT(2,3)
+static void
 xsltGenericErrorDefaultFunc(void *ctx ATTRIBUTE_UNUSED, const char *msg, ...) {
     va_list args;
 
@@ -557,7 +557,7 @@ xsltSetGenericErrorFunc(void *ctx, xmlGenericErrorFunc handler) {
  *
  * Default handler for out of context error messages.
  */
-static void LIBXSLT_ATTR_FORMAT(2,3)
+static void
 xsltGenericDebugDefaultFunc(void *ctx ATTRIBUTE_UNUSED, const char *msg, ...) {
     va_list args;
 
